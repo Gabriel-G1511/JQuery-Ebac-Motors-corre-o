@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- configuração de viewport para responsividade -->
+    <title>Formulário de Cadastro - Módulo 10</title> <!-- título da página -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- conexão com o Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- conexão com o Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:wght@400;700&display=swap' rel='stylesheet'> <!-- importando fonte Roboto -->
+    <link rel="stylesheet" href="main.css"> <!-- estilo principal -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+</head>
+
+<!-- CONSULTEM O README PARA DICAS DE COMO SOLUCIONAR O EXERCÍCIO! -->
+
+<body>
+    <header> <!-- cabeçalho -->
+        <h1>Adquira seu veículo agora mesmo!</h1> <!-- título -->
+    </header>
+
+    <div id="carousel-imagens"> <!-- carrossel de imagens -->
+        <img src="./assets/slide1.png" alt="Carro da Porsche"> <!-- imagem do carro da Porsche -->
+        <img src="./assets/slide2.png" alt="Carro da BMW"> <!-- imagem do carro da BMW -->
+        <img src="./assets/slide3.png" alt="Carro da Ford"> <!-- imagem do carro da Ford -->
+    </div>
+
+    <div class="container"> <!-- container principal -->
+        <h2>Insira seus dados para finalização da compra</h2> <!-- subtítulo -->
+        <form id="form"> <!-- formulário de cadastro -->
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="nome">Nome completo</label> <!-- label para o campo nome -->
+                <input type="text" id="nome" name="nome" placeholder="Seu nome"> <!-- input para o nome -->
+            </div>
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="email">E-mail</label> <!-- label para o campo email -->
+                <input type="email" id="email" name="email" placeholder="email@exemplo.com"> <!-- input para o email -->
+            </div>
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="telefone">Telefone</label> <!-- label para o campo telefone -->
+                <input type="tel" id="telefone" name="telefone"> <!-- input para o telefone -->
+            </div>
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="cpf">CPF</label> <!-- label para o campo CPF -->
+                <input type="text" id="cpf" name="cpf"> <!-- input para o CPF -->
+            </div>
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="endereco">Endereço completo</label> <!-- label para o campo endereço -->
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade, estado"> <!-- input para o endereço -->
+            </div>
+            <div class="form-campo"> <!-- campo do formulário -->
+                <label for="cep">CEP</label> <!-- label para o campo CEP -->
+                <input type="number" id="cep" name="cep"> <!-- input para o CEP -->
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- ordem de importação dos scripts estava incorreta, corrigida para evitar erros de carregamento -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script> <!-- jQuery -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script> <!-- jQuery Migrate -->
+    <script src="./js/jquery.mask.min.js"></script> <!-- jQuery Mask Plugin -->
+    <script src="./js/jquery.validate.min.js"></script> <!-- jQuery Validate -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!-- Slick Carousel -->
+    <script src="./js/messages_pt_BR.min.js"></script> <!-- mensagens de validação em português -->
+    <script src="./js/main.js"></script> <!-- script principal -->
+<!--script realocado para JS -->
+</body>
+
+</html>
